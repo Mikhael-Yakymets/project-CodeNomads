@@ -1,0 +1,131 @@
+.swiper-slide{
+    min-height: 302px;
+    width: 343px;
+    border-radius: 20px;
+    border: 1px solid #FAFAFA33;
+    padding: 32px 24px;
+}
+
+.review-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+.review-name {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -2%;
+    color: #FAFAFA;
+    margin-bottom: 8px;
+}
+
+.review-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    color: #FAFAFA99;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.reviews-h {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    color: #FAFAFA66;
+    margin-bottom: 32px;
+}
+
+.reviews {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.button-next,
+.button-prev {
+    width: 52px;
+    height: 52px;
+    border-radius: 60px;
+    border: 1px solid #FAFAFA80;
+    padding: 14px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-next:disabled,
+.button-prev:disabled {
+    border-color: #FAFAFA33;
+}
+
+.prev-icon,
+.next-icon {
+    fill: #FAFAFA;
+}
+
+.button-prev:disabled .prev-icon,
+.button-next:disabled .next-icon {
+    fill: #3B3B3B;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.reviews-error {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -2%;
+    color: red;
+}
+
+.swiper {
+    margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+    .reviews{
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .button-next,
+    .button-prev {
+        width: 64px;
+        height: 64px;
+        padding: 16px;
+    }
+
+    .prev-icon,
+    .next-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .buttons {
+        gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .reviews {
+        padding-top: 164px;
+        padding-bottom: 164px;
+    }
+}
+
+
+
