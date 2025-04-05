@@ -4,6 +4,7 @@ const menuLinks = document.querySelectorAll('.header-nav-list a[href^="#"]');
 
 buttonMenuNav.addEventListener('click', openNavList);
 
+//#region Nav Menu
 function openNavList() {
   menuNav.classList.toggle('visualy-hidden');
 }
@@ -13,3 +14,4 @@ menuLinks.forEach(link => {
     menuNav.classList.add('visualy-hidden');
   });
 });
+//#endregion Nav Menu
