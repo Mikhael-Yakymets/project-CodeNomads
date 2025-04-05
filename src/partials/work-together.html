@@ -1,0 +1,95 @@
+<section class="section-together" id="work-together">
+  <div class="container work-together-container">
+    <div class="work-together-title-wrapper">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/work-together/face-tab-dek@1x.jpg 1x,
+            ./img/work-together/face-tab-dek@2x.jpg 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/work-together/face-mob@1x.jpg 1x,
+            ./img/work-together/face-mob@2x.jpg 2x
+          "
+        />
+        <img
+          class="face-logo-img"
+          src="./img/work-together/face-mob@1x.jpg"
+          alt="lloyd-developer"
+          width="70"
+          height="70"
+        />
+      </picture>
+      <h3 class="work-title">
+        let's <span class="title-part">work</span>
+        <span class="title-next-line">together</span>
+      </h3>
+    </div>
+
+    <form class="work-together-form">
+      <div class="work-together-form-box">
+        <div class="work-together-form-wrapper">
+          <label
+            for="enter-email"
+            class="work-together-label visually-hidden"
+          ></label>
+          <input
+            type="email"
+            name="email"
+            id="enter-email"
+            class="work-together-input"
+            placeholder="clients@gmail.com"
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <p class="work-together-error-input">Invalid email, try again</p>
+        </div>
+
+        <div class="work-together-form-wrapper">
+          <label
+            for="enter-message"
+            class="work-together-label visually-hidden"
+          ></label>
+          <input
+            type="text"
+            class="work-together-message"
+            name="message"
+            placeholder="comments"
+            id="enter-message"
+          />
+          <p class="work-together-error-message">the field must be filled</p>
+        </div>
+      </div>
+      <button class="work-together-button" type="submit">Send</button>
+    </form>
+
+    <ul class="work-together-contact-list">
+      <li class="work-together-item">
+        <a
+          href="mailto:lloydjefferson@gmail.com"
+          class="work-together-link email-link"
+          >lloydjefferson@gmail.com</a
+        >
+      </li>
+      <li class="work-together-item">
+        <a href="tel:+3801111111111" class="work-together-link phone-link"
+          >+380 11 1111 11 11</a
+        >
+      </li>
+    </ul>
+  </div>
+  <div class="work-together-backdrop">
+    <div class="work-together-modal">
+      <button class="work-together-close-button">
+        <svg class="icon-close" width="24" height="24">
+          <use href="./img/icons.svg#icon-close-work-together"></use>
+        </svg>
+      </button>
+      <h3 class="work-together-modal-title"></h3>
+      <p class="work-together-modal-text"></p>
+    </div>
+  </div>
+</section>
