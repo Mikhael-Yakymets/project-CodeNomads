@@ -10,38 +10,30 @@ const close = document.querySelector('.work-together-close-button');
 const backdrop = document.querySelector('.work-together-backdrop');
 const title = document.querySelector('.work-together-modal-title');
 const text = document.querySelector('.work-together-modal-text');
+const emailLink = document.querySelector('.email-link');
+const phoneLink = document.querySelector('.phone-link');
 
 
-close.addEventListener('click', () => {
-  backdrop.classList.remove('is-open');
-  document.body.style.overflow = 'auto';
+
+let emailTouched = false;
+
+input.addEventListener('blur', () => {
+  emailTouched = true;
+  checkEmail();
 });
 
-window.addEventListener('keydown', event => {
-  if (event.code === 'Escape') {
-    backdrop.classList.remove('is-open');
-    document.body.style.overflow = 'auto';
+function checkEmail() {
+  if (!emailTouched) return; 
+
+  if (input.validity.valid) {
+    errorInput.style.display = 'none';
+  } else {
+    errorInput.style.display = 'block';
   }
-});
+}
 
-backdrop.addEventListener('click', event => {
-  if (event.target === event.currentTarget) {
-    backdrop.classList.remove('is-open');
-    document.body.style.overflow = 'auto';
-  }
-});
+input.addEventListener('input', checkEmail);
 
-
-// function checkEmail(event) {
-//     const emailInput = event.target;
-//     if (emailInput.validity.valid) {
-//     errorInput.style.display = 'none';
-//   } else {
-//     errorInput.style.display = 'block';
-//   }
-// }
-
-// input.addEventListener('input', checkEmail);
 
 
 form.addEventListener('submit', event => {
@@ -60,12 +52,12 @@ form.addEventListener('submit', event => {
 
     if (input.value.trim() !== '' && message.value.trim() !== '') {
         axios 
-            .post('https://portfolio-js.b.goit.study/api-docs', {
-            email: input.value,
-            comment: message.value,
+            .post('https://portfolio-js.b.goit.study/api/requests', {
+              email: input.value,
+              comment: message.value,
             })
             .then(response => {
-                backdrop.classList.add('is-open');
+                backdrop.classList.add('backdrop-opened');
                 document.body.style.overflow = 'hidden';
 
                 title.textContent = response.data.title;
@@ -81,6 +73,37 @@ form.addEventListener('submit', event => {
                 });
         })
     }
-
 }) 
     
+
+
+function closeModal() {
+  setTimeout(() => {
+    backdrop.classList.remove('backdrop-opened');
+    document.body.overflow = 'auto';
+  }, 150);
+}
+
+close.addEventListener('click', closeModal);
+
+window.addEventListener('keydown', event => {
+  if (event.code === 'Escape') {
+    closeModal();
+  }
+});
+
+backdrop.addEventListener('click', event => {
+  if (event.target === event.currentTarget) {
+    closeModal();
+  }
+});
+
+
+
+emailLink.addEventListener('click', () => {
+  emailLink.blur();
+});
+
+phoneLink.addEventListener('click', () => {
+  phoneLink.blur();
+});
