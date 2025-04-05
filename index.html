@@ -16,8 +16,9 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-CodeNomads/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/project-CodeNomads/assets/vendor-4I054-ri.js">
-    <link rel="stylesheet" crossorigin href="/project-CodeNomads/assets/index-DKZ5eWUT.css">
+    <link rel="modulepreload" crossorigin href="/project-CodeNomads/assets/vendor-zjFSmZqu.js">
+    <link rel="stylesheet" crossorigin href="/project-CodeNomads/assets/vendor-BE7bUg82.css">
+    <link rel="stylesheet" crossorigin href="/project-CodeNomads/assets/index-B2zKEq3d.css">
   </head>
   <body>
     <header class="header">
@@ -33,21 +34,25 @@
 
     <!-- #region Menu -->
     <div class="header-nav-box">
-      <p class="header-nav-menu">Menu</p>
-      <ul class="header-nav-list">
-        <li class="header-nav-list-item"><a href="">About me</a></li>
-        <li class="header-nav-list-item"><a href="">Benefits</a></li>
-        <li class="header-nav-list-item"><a href="">Projects</a></li>
-        <li class="header-nav-list-item"><a href="">FAQ</a></li>
+      <button class="header-nav-menu-btn" type="button">Menu</button>
+      <ul class="header-nav-list visualy-hidden">
+        <li class="header-nav-list-item"><a href="#about-me">About me</a></li>
+        <li class="header-nav-list-item"><a href="#benefits">Benefits</a></li>
+        <li class="header-nav-list-item"><a href="#projects">Projects</a></li>
+        <li class="header-nav-list-item"><a href="#faq">FAQ</a></li>
       </ul>
     </div>
     <!-- #endregion Menu -->
 
+    <!-- #region Burger Button -->
     <button class="header-burger-btn" type="button">
       <svg class="header-burger-ico" width="28" height="28">
         <use href="/project-CodeNomads/assets/icons-BCYH068-.svg#icon-burger"></use>
       </svg>
     </button>
+    <!-- #endregion Burger Button -->
+
+    <a class="header-link" href="#work-together">Order the project</a>
   </div>
 </header>
 
@@ -118,7 +123,30 @@
       
       
       
-      
+      <section class="reviews" id="reviews">
+  <div class="reviews-bg">
+  <div class="reviews-container container">
+    <h2 class="reviews-h">REVIEWS</h2>
+
+    <div class="swiper">
+      <div class="swiper-wrapper"></div>
+    </div>
+
+    <div class="buttons">
+      <button class="button-prev" type="button">
+        <svg class="prev-icon" width="24" height="24">
+          <use href="/project-CodeNomads/assets/icons-BCYH068-.svg#icon-arrow-narrow-left"></use>
+        </svg>
+      </button>
+      <button class="button-next" type="button">
+        <svg class="next-icon" width="24" height="24">
+          <use href="/project-CodeNomads/assets/icons-BCYH068-.svg#icon-arrow-narrow-right"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
       <section class="section-together" id="work-together">
   <div class="container work-together-container">
     <div class="work-together-title-wrapper">
