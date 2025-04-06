@@ -1,16 +1,9 @@
 /* #region Mobile Hero */
 
 .hero-section {
-  background-image: linear-gradient(
-    90deg,
-    (
-      url(./img/herophoto/Glasseffect_mob@1x.png) 1x,
-      url(./img/herophoto/Glasseffect_mob@2x.png) 2x
-    )
-  );
+  background-image: url('../img/herophoto/Glasseffect_mob@1x.png');
   padding-top: 282px;
   padding-bottom: 32px;
-  background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -81,13 +74,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-section {
-    background-image: linear-gradient(
-      90deg,
-      (
-        url(./img/herophoto/Glasseffect_tab@1x.png) 1x,
-        url(./img/herophoto/Glasseffect_tab@2x.png) 2x
-      )
-    );
+    background-image: url('../img/herophoto/Glasseffect_tab@1x.png');
     padding-top: 300px;
     padding-bottom: 32px;
   }
@@ -121,13 +108,7 @@
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
-    background-image: linear-gradient(
-      90deg,
-      (
-        url(./img/herophoto/Glasseffect_desc@1x.png) 1x,
-        url(./img/herophoto/Glasseffect_desc@2x.png) 2x
-      )
-    );
+    background-image: url('../img/herophoto/Hero2_desc@1x.png');
     padding-top: 300px;
     padding-bottom: 32px;
   }
