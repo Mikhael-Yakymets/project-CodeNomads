@@ -4,8 +4,16 @@
   background-image: url('../img/herophoto/Glasseffect_mob@1x.png');
   padding-top: 282px;
   padding-bottom: 32px;
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
+}
+
+@media (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('../img/herophoto/Glasseffect_mob@2x.png');
+  }
 }
 
 .hero-content-container {
@@ -24,9 +32,8 @@
   margin: 0 auto;
 }
 
-.hero-socials-link,
-.hero-socials-link.email {
-  color: #fafafa;
+.hero-title span {
+  display: block;
 }
 
 .hero-socials-list {
@@ -44,17 +51,23 @@
   justify-content: center;
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px;
+  padding: 10px 12px;
   width: 37px;
   height: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #fafafa;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-socials-link:hover {
-  border-color: #4070eb;
+.hero-socials-link:hover,
+.hero-socials-link:focus {
+  color: #4070eb;
+  box-shadow: 1px 1px 2px #4070eb;
 }
 
 .hero-socials-link.email {
+  color: #fafafa;
   width: 178px;
 }
 
@@ -79,6 +92,13 @@
     padding-bottom: 32px;
   }
 
+  @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('../img/herophoto/Glasseffect_tab@2x.png');
+    }
+  }
+
   .hero-content-container {
     gap: 186px;
   }
@@ -95,6 +115,7 @@
     width: 55px;
     height: 55px;
     padding: 18px;
+    font-size: 16px;
   }
 
   .hero-socials-link.email {
@@ -108,9 +129,16 @@
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
-    background-image: url('../img/herophoto/Hero2_desc@1x.png');
+    background-image: url('../img/herophoto/Hero_desc@1x.png');
     padding-top: 300px;
     padding-bottom: 32px;
+  }
+
+  @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('../img/herophoto/Hero_desc@2x.png');
+    }
   }
 
   .hero-content-container {
