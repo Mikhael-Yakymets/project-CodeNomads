@@ -1,6 +1,9 @@
 .section-together {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-image: url(../img/work-together-bg-img/bg-img-mob@1x.png);
+    background-repeat: no-repeat;
+    background-position: right top 28px;
 }
 
 .face-logo-img {
@@ -47,6 +50,7 @@
 }
 
 form input {
+    width: 100%;
     outline: none;
     padding-bottom: 20px;
     background-color: transparent;
@@ -65,8 +69,8 @@ input::placeholder {
     opacity: 0.5;
 }
 
-form input:hover,
-form input:focus {
+form input:focus,
+form input:hover {
     box-shadow: 0 2px 0 #4070eb;
     border-bottom: 2px solid #4070eb;
 }
@@ -74,13 +78,44 @@ form input:focus {
 .work-together-error-input,
 .work-together-error-message {
     display: none;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: rgba(231, 74, 59, 1);
-    margin-top: -20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #e74a3b;
+    margin-top: -22px;
     padding-left: 2px;
+}
+
+.work-together-success-input{
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #3cbc81;
+    margin-top: -22px;
+    padding-left: 2px;
+}
+
+.input-border-success{
+    border-bottom: 1px solid #3cbc81;
+    box-shadow: none;
+}
+
+.input-border-error {
+    border-bottom: 1px solid #e74a3b;
+    box-shadow: none;
+}
+
+input.input-border-success:focus {
+    border-bottom: 1px solid #3cbc81;
+    box-shadow: none;
+}
+
+input.input-border-error:focus {
+    border-bottom: 2px solid #e74c3c;
+    box-shadow: none;
 }
 
 .work-together-button {
@@ -105,10 +140,11 @@ form input:focus {
 .work-together-contact-list {
     margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 }
 
-.work-together-link {
+.work-together-item {
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
@@ -122,8 +158,8 @@ form input:focus {
     transition: all 0.2s ease-in-out;
 }
 
-.work-together-link:focus,
-.work-together-link:hover {
+.work-together-item:focus,
+.work-together-item:hover {
     color: #4070eb;
     box-shadow: 1px 1px 2px #4070eb;
 }
@@ -141,6 +177,8 @@ form input:focus {
     .section-together {
         padding-top: 80px;
         padding-bottom: 160px;
+        background-image: url(../img/work-together-bg-img/bg-img-tab@1x.png);
+        background-position: right top ;
     }
 
     .face-logo-img {
@@ -185,7 +223,7 @@ form input:focus {
         gap: 8px;
     }
 
-    .work-together-link {
+    .work-together-item {
         padding: 18px 32px;
         font-size: 16px;
     }
@@ -195,7 +233,8 @@ form input:focus {
 
 @media screen and (min-width: 1440px) {
     .section-together {
-    padding-left: 196px;
+        padding-left: 196px;
+        background-image: url(../img/work-together-bg-img/bg-img-dek@1x.png);
     }
 
     .work-together-form {
