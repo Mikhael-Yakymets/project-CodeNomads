@@ -144,22 +144,26 @@ input.input-border-error:focus {
     gap: 4px;
 }
 
-.work-together-item {
+.work-together-email-link,
+.work-together-phone-link {
+    display: inline-block;
+    font-style: normal;
+    outline: none;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
     cursor: pointer;
-    outline: none;
-    font-style: normal;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 10px 12px;
     transition: all 0.2s ease-in-out;
 }
 
-.work-together-item:focus,
-.work-together-item:hover {
+.work-together-email-link:focus,
+.work-together-email-link:hover,
+.work-together-phone-link:focus,
+.work-together-phone-link:hover {
     color: #4070eb;
     box-shadow: 1px 1px 2px #4070eb;
 }
@@ -178,7 +182,7 @@ input.input-border-error:focus {
         padding-top: 80px;
         padding-bottom: 160px;
         background-image: url(../img/work-together-bg-img/bg-img-tab@1x.png);
-        background-position: right top ;
+        background-position: right top;
     }
 
     .face-logo-img {
@@ -223,7 +227,8 @@ input.input-border-error:focus {
         gap: 8px;
     }
 
-    .work-together-item {
+    .work-together-email-link,
+    .work-together-phone-link {
         padding: 18px 32px;
         font-size: 16px;
     }
