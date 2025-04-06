@@ -2,23 +2,37 @@
 
 .hero-section {
   background-image: linear-gradient(
-    90deg,
-    (
-      url(./img/herophoto/Glasseffect_mob@1x.png) 1x,
-      url(./img/herophoto/Glasseffect_mob@2x.png) 2x
-    )
-  );
-  padding-top: 282px;
-  padding-bottom: 32px;
+      90deg,
+      #1c1d20 49.68%,
+      #001958 67.73%,
+      #0041e8 100%
+    ),
+    url('../img/herophoto/Glasseffect_mob@1x.png');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  width: 100%;
+
   position: relative;
+  padding-top: 281px;
+  padding-bottom: 32px;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('../img/herophoto/Glass\ effect_mob@2x.png');
+  }
 }
 
 .hero-content-container {
   display: flex;
   flex-direction: column;
-  gap: 212px;
+}
+
+.hero-title span {
+  display: block;
 }
 
 .hero-title {
@@ -28,53 +42,46 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: #fafafa;
-  margin: 0 auto;
-}
 
-.hero-socials-link,
-.hero-socials-link.email {
-  color: #fafafa;
+  margin: 0 auto;
+  margin-bottom: 212px;
+  max-width: 343px;
 }
 
 .hero-socials-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 4px;
-  row-gap: 10px;
-  margin-top: -100px;
 }
 
 .hero-socials-link {
-  display: flex;
-  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 12px;
   width: 37px;
   height: 37px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hero-socials-link:hover {
-  border-color: #4070eb;
+.hero-socials-link:hover,
+.hero-socials-link:focus {
+  color: #4070eb;
+  box-shadow: 1px 1px 2px #4070eb;
 }
 
 .hero-socials-link.email {
   width: 178px;
-}
-
-@media only screen and (min-width: 359px) {
-  .hero-socials-list {
-    margin-top: -50px;
-  }
-}
-
-@media only screen and (min-width: 374px) {
-  .hero-socials-list {
-    margin-top: 0px;
-  }
 }
 
 /* #region Tablet Hero */
@@ -82,32 +89,45 @@
 @media only screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(
-      90deg,
-      (
-        url(./img/herophoto/Glasseffect_tab@1x.png) 1x,
-        url(./img/herophoto/Glasseffect_tab@2x.png) 2x
-      )
-    );
+        90deg,
+        #1c1d20 49.68%,
+        #001958 67.73%,
+        #0041e8 100%
+      ),
+      url('../img/herophoto/Glasseffect_tab@1x.png');
     padding-top: 300px;
     padding-bottom: 32px;
   }
 
-  .hero-content-container {
-    gap: 186px;
+  @media only screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('../img/herophoto/Glasseffect_tab@2x.png');
+    }
   }
 
   .hero-title {
+    font-weight: 500;
     font-size: 90px;
+
+    max-width: 632px;
+    margin-bottom: 187px;
   }
 
   .hero-socials-list {
-    justify-content: end;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 8px;
   }
 
   .hero-socials-link {
+    font-weight: 500;
+    font-size: 16px;
+
+    padding: 18px 20px;
     width: 55px;
     height: 55px;
-    padding: 18px;
   }
 
   .hero-socials-link.email {
@@ -119,26 +139,29 @@
 
 /* #region Desctop Hero */
 
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 768px) {
   .hero-section {
     background-image: linear-gradient(
-      90deg,
-      (
-        url(./img/herophoto/Glasseffect_desc@1x.png) 1x,
-        url(./img/herophoto/Glasseffect_desc@2x.png) 2x
-      )
-    );
-    padding-top: 300px;
-    padding-bottom: 32px;
+        90deg,
+        #1c1d20 49.68%,
+        #001958 67.73%,
+        #0041e8 100%
+      ),
+      url('../img/herophoto/Glasseffect_desc@1x.png');
   }
 
-  .hero-content-container {
-    gap: 242px;
+  @media only screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('../img/herophoto/Glasseffect_desc@2x.png');
+    }
   }
 
   .hero-title {
     max-width: 1084px;
     margin: 0 auto;
+    margin-bottom: 243px;
   }
 }
 
