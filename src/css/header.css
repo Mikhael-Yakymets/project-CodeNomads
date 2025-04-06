@@ -78,6 +78,7 @@
     background-color: #4070eb;
   }
 
+  /* #region Menu-1 */
   .header-nav-box {
     display: flex;
     align-items: center;
@@ -109,4 +110,5 @@
     letter-spacing: -0.02em;
     color: #fafafa;
   }
+  /* #endregion Menu-1 */
 }
