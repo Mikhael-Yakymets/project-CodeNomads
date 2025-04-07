@@ -1,3 +1,118 @@
+/* #region Content-section */
+/* Mobile */
+.about-me {
+  padding: 64px 0;
+}
+
+.about-me-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+
+  margin-bottom: 32px;
+}
+
+.content-wrapper {
+  border-radius: 24px;
+  width: 100%;
+  max-width: 343px;
+  height: 500px;
+
+  background: #242527;
+}
+
+.about-me-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+
+  padding: 32px;
+}
+
+.blue-color-span {
+  color: #4070eb;
+}
+
+.grey-color-span {
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.photo-wrapper {
+  display: block;
+  border-radius: 24px;
+  width: 100%;
+  max-width: 343px;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 768px) {
+  .about-me {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .about-me-content {
+    margin-bottom: 64px;
+  }
+
+  .content-wrapper {
+    max-width: 704px;
+    height: 700px;
+  }
+
+  .about-me-text {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 105%;
+
+    padding: 64px;
+  }
+
+  .photo-wrapper {
+    max-width: 704px;
+    height: auto;
+  }
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 1440px) {
+  .about-me {
+    padding: 96px 0;
+  }
+
+  .about-me-content {
+    flex-wrap: nowrap;
+
+    margin-bottom: 96px;
+  }
+
+  .content-wrapper {
+    max-width: 680px;
+    height: 700px;
+  }
+
+  .photo-wrapper {
+    max-width: 704px;
+    height: auto;
+  }
+}
+/* #endregion */
+
+/* #region Accordion-section*/
 .about-me {
   position: relative;
   background: var(--background);
@@ -62,6 +177,8 @@
   padding-bottom: 20px;
   border: none;
   background: var(--background);
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,3 +285,80 @@
 #accordion-about .ac-trigger:active .icon-accordion {
   --color1: var(--green);
 }
+/* #endregion */
+
+/* #region Swiper-section */
+
+.about-me-swiper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+
+  overflow: hidden;
+  width: 100%;
+}
+
+.swiper-skills-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+.swiper-list-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  transition: transform 0.3s ease;
+}
+
+.swiper-item.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 130px;
+  height: 130px;
+
+  flex-shrink: 0;
+  border-radius: 100%;
+  background-color: transparent;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-skills-button-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  margin-left: auto;
+
+  color: #3b3b3b;
+  stroke: none;
+  fill: none;
+
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-skills-button-next:hover,
+.swiper-skills-button-next:focus {
+  color: #4070eb;
+}
+
+/* #endregion */
