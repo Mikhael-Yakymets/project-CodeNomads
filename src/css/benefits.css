@@ -1,0 +1,155 @@
+/*Mobile*/
+
+.benefits-section {
+  padding: 64px 0;
+}
+
+.benefits-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 32px;
+}
+
+.benefits-item {
+  background-color: #242527;
+  border-radius: 20px;
+  padding: 24px;
+
+  width: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefits-item:hover,
+.benefits-item:focus-visible {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 2px #4070eb;
+}
+
+.benefits-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #0041e8;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+
+  margin-bottom: 64px;
+}
+
+.benefits-icon {
+  fill: #fafafa;
+}
+
+.benefits-item-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  margin-bottom: 8px;
+}
+
+.benefits-item-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.redirect-button {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 18px 36px;
+  width: 187px;
+  height: 55px;
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redirect-button:hover,
+.redirect-button:focus-visible {
+  color: #4070eb;
+  box-shadow: 1px 1px 2px #4070eb;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.redirect-button:focus {
+  outline: none;
+}
+
+.redirect-button:active {
+  color: #4070eb;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+#benefits {
+  scroll-behavior: smooth;
+}
+
+/*Tablet*/
+
+@media only screen and (min-width: 768px) {
+  .benefits-section {
+    padding: 96px 0;
+  }
+
+  .benefits-list {
+    margin-bottom: 64px;
+  }
+
+  .benefits-item {
+    max-width: calc((100% - 16px) / 2);
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 1440px) {
+  .benefits-section {
+    padding: 164px 0;
+  }
+
+  .benefits-container {
+    display: flex;
+  }
+
+  .benefits-container > div {
+    flex: 1;
+  }
+}

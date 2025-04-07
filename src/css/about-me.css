@@ -1,0 +1,170 @@
+.about-me {
+  position: relative;
+  background: var(--background);
+  padding: 64px 0 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    padding: 64px 0 48px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about-me {
+    padding: 96px 0 82px;
+  }
+}
+
+.accordion-container {
+  background-color: var(--background);
+}
+
+#accordion-about .ac {
+  background-color: var(--background);
+  margin: 20px 0;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 1px 0 0 #fafafa33;
+}
+
+@media screen and (min-width: 768px) {
+  #accordion-about .ac {
+    margin: 32px 0;
+  }
+}
+
+#accordion-about .ac-header {
+  background-color: var(--background);
+  border: none;
+}
+
+#accordion-about .ac .ac-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  font-family: Inter Tight;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  background: var(--background);
+  color: #fafafa66;
+  border: none;
+}
+
+#accordion-about .ac .ac-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 12px;
+  padding-bottom: 20px;
+  border: none;
+  background: var(--background);
+}
+
+@media screen and (min-width: 768px) {
+  #accordion-about .ac .ac-panel {
+    padding-top: 0px;
+    padding-bottom: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #accordion-about .ac .ac-panel {
+    padding: 0 68px 32px 696px;
+  }
+
+  #accordion-about .ac:not(:first-child) .ac-panel {
+    padding-right: 215px;
+  }
+
+  #accordion-about .ac.is-active .ac-panel .ac-text:first-child {
+    padding-top: 8px;
+  }
+
+  #accordion-about .ac:first-child .ac-panel .ac-text:first-child {
+    padding-bottom: 22px;
+  }
+}
+
+#accordion-about .ac.acis-active .ac-panel {
+  padding: 0;
+  border: none;
+}
+
+#accordion-about .ac .ac-text {
+  color: transparent;
+}
+
+#accordion-about .ac.is-active .ac-text {
+  padding: 0;
+  font-family: Inter Tight;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+#accordion-about .ac:first-child .ac-panel .ac-text:first-child {
+  padding-bottom: 22px;
+  padding-top: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  #accordion-about .ac:first-child .ac-panel .ac-text:first-child {
+    padding-bottom: 6px;
+  }
+}
+
+#accordion-about .ac:first-child .ac-panel .ac-text:not(:first-child) {
+  padding-bottom: 0;
+}
+
+#accordion-about .ac-trigger::after {
+  display: none;
+}
+
+#accordion-about .icon-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fafafa33;
+  border-radius: 50%;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  #accordion-about .icon-span {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#accordion-about .icon-accordion {
+  transition: transform 0.6s ease;
+}
+
+#accordion-about .ac-trigger[aria-expanded='true'] .icon-accordion {
+  transform: rotate(180deg);
+}
+
+#accordion-about .ac-trigger:hover .icon-span {
+  border-color: var(--green-hover);
+}
+
+#accordion-about .ac-trigger:hover .icon-accordion {
+  --color1: var(--green-hover);
+}
+
+#accordion-about .ac-trigger:active .icon-span {
+  border-color: var(--green);
+}
+
+#accordion-about .ac-trigger:active .icon-accordion {
+  --color1: var(--green);
+}

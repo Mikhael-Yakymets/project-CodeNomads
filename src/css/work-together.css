@@ -1,0 +1,333 @@
+.section-together {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background-image: url(../img/work-together-bg-img/bg-img-mob@1x.png);
+    background-repeat: no-repeat;
+    background-position: right top 28px;
+}
+
+.face-logo-img {
+    border-radius: 12px;
+}
+
+.work-together-title-wrapper {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.work-title {
+    position: relative;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+
+.title-part {
+    color: #0041e8;
+}
+
+.title-next-line {
+    position: absolute;
+    left: -47px;
+    top: 56px;
+}
+
+.work-together-form {
+    margin-top: 96px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.work-together-form-box{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form input {
+    width: 100%;
+    outline: none;
+    padding-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    transition: all 0.2s ease-in-out; 
+}
+
+input::placeholder {
+    color: rgba(250, 250, 250, 0.6);
+    opacity: 0.5;
+}
+
+form input:focus,
+form input:hover {
+    box-shadow: 0 2px 0 #4070eb;
+    border-bottom: 2px solid #4070eb;
+}
+
+.work-together-error-input,
+.work-together-error-message {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #e74a3b;
+    margin-top: -22px;
+    padding-left: 2px;
+}
+
+.work-together-success-input{
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #3cbc81;
+    margin-top: -22px;
+    padding-left: 2px;
+}
+
+.input-border-success{
+    border-bottom: 1px solid #3cbc81;
+    box-shadow: none;
+}
+
+.input-border-error {
+    border-bottom: 1px solid #e74a3b;
+    box-shadow: none;
+}
+
+input.input-border-success:focus {
+    border-bottom: 1px solid #3cbc81;
+    box-shadow: none;
+}
+
+input.input-border-error:focus {
+    border-bottom: 2px solid #e74c3c;
+    box-shadow: none;
+}
+
+.work-together-button {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #0041e8;
+    border: none;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.work-together-button:hover,
+.work-together-button:focus {
+    background-color: #4070eb;
+}
+
+.work-together-contact-list {
+    margin-top: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.work-together-item {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    cursor: pointer;
+    outline: none;
+    font-style: normal;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 10px 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+.work-together-item:focus,
+.work-together-item:hover {
+    color: #4070eb;
+    box-shadow: 1px 1px 2px #4070eb;
+}
+
+@media screen and (max-width: 767px) {
+    .face-logo-img {
+        width: 44px;
+        height: 44px;
+    }
+}
+
+/* tablet styles */
+
+@media screen and (min-width: 768px) {
+    .section-together {
+        padding-top: 80px;
+        padding-bottom: 160px;
+        background-image: url(../img/work-together-bg-img/bg-img-tab@1x.png);
+        background-position: right top ;
+    }
+
+    .face-logo-img {
+        border-radius: 24px;
+    }
+
+    .work-together-wrapper {
+        gap: 20px;
+    }
+
+    .work-title {
+        font-size: 64px;
+    }
+
+    .title-next-line {
+            left: -78px;
+            top: 74px;
+    }
+
+    .work-together-form {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .work-together-form-box {
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    form input {
+        width: 245px;
+        height: 44px;
+    }
+
+    .work-together-button {
+        width: 150px;
+        height: 150px;
+    }
+
+    .work-together-contact-list {
+        margin-top: 78px;
+        gap: 8px;
+    }
+
+    .work-together-item {
+        padding: 18px 32px;
+        font-size: 16px;
+    }
+}
+
+/* dekstop styles */
+
+@media screen and (min-width: 1440px) {
+    .section-together {
+        padding-left: 196px;
+        background-image: url(../img/work-together-bg-img/bg-img-dek@1x.png);
+    }
+
+    .work-together-form {
+        gap: 86px;
+    }
+
+    form input {
+        width: 390px;
+    }
+}
+
+/* MODAL STYLES */
+
+.work-together-backdrop {
+    position: fixed;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 15, 16, 0.6);
+}
+
+.backdrop-opened {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+}
+
+.work-together-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 343px;
+    height: 276px;
+    background-color: #1c1d20;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    border-radius: 20px;
+    padding: 64px 32px;
+}
+
+.work-together-close-button {
+    top: 20px;
+    right: 20px;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    border: none;
+    outline: none;
+    border: none;
+}
+
+.icon-close {
+    fill: #fafafa;
+    transition: transform 0.2s ease;
+}
+
+.icon-close:hover,
+.icon-close:focus {
+    transform: scale(1.4);
+}
+
+.work-together-modal-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 16px;
+}
+
+.work-together-modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(250, 250, 250, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+    .work-together-modal {
+        padding: 64px;
+        width: 492px;
+        height: 246px;
+    }
+
+    .work-together-modal-title {
+        min-width: 364px;
+    }
+}
