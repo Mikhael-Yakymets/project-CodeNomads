@@ -1,0 +1,44 @@
+.section {
+    margin-bottom: 20px;
+  }
+  
+  .toggle-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: #faFAFA;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .arrow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #faFAFA;
+    border-bottom: 2px solid #faFAFA;
+    transform: rotate(45deg);
+    transition: transform 0.3s;
+  }
+  
+  .toggle-btn[aria-expanded="true"] .arrow {
+    transform: rotate(-135deg);
+  }
+  
+  .about-me__content,
+  .role__content,
+  .education__content {
+    display: none;
+    padding: 10px 0;
+  }
+  
+  .toggle-btn[aria-expanded="true"] + .about-me__content,
+  .toggle-btn[aria-expanded="true"] + .role__content,
+  .toggle-btn[aria-expanded="true"] + .education__content {
+    display: block;
+  }
+  
