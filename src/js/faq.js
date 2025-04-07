@@ -1,4 +1,4 @@
-import Accordion from "accordion-js";
+import Accordion from 'accordion-js';
 // import "accordion-js/dist/accordion.min.css";
 
 new Accordion('.accordion-container');
@@ -14,3 +14,7 @@ new Accordion('.accordion-container');
 //     button.addEventListener('click', () => accordion.close(idx));
 // });
 
+// const buttons = accContainer.querySelectorAll('.close-accordion-btn');
+// [...buttons].map((button, idx) => {
+//     button.addEventListener('click', () => accordion.close(idx));
+// });
