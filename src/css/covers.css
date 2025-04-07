@@ -1,6 +1,6 @@
 .covers {
   background-color: #1c1d20;
-  background-image: url('../img/covers/background.png');
+  background-image: url('./img/covers/background.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: scroll;
