@@ -142,7 +142,11 @@ form.addEventListener('submit', event => {
 function closeModal() {
   setTimeout(() => {
     backdrop.classList.remove('backdrop-opened');
-    document.body.overflow = 'auto';
+    document.body.style.overflow = 'auto';
+    
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
   }, 150);
 
   form.reset();

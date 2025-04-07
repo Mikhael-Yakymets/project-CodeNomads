@@ -8,6 +8,11 @@ new Accordion('.accordion-container');
 //     showMultiple: true,
 //     onOpen: (currEl) => console.log('Open!', currEl)
 // });
+ 
+// const buttons = accContainer.querySelectorAll('.close-accordion-btn');
+// [...buttons].map((button, idx) => {
+//     button.addEventListener('click', () => accordion.close(idx));
+// });
 
 // const buttons = accContainer.querySelectorAll('.close-accordion-btn');
 // [...buttons].map((button, idx) => {

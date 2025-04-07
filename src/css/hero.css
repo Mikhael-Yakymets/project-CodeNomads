@@ -57,18 +57,20 @@
   font-weight: 500;
   font-size: 14px;
   color: #fafafa;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero-socials-link:hover,
-.hero-socials-link:focus {
-  color: #4070eb;
-  box-shadow: 1px 1px 2px #4070eb;
+  transition: all 0.2s ease-in-out;
 }
 
 .hero-socials-link.email {
   color: #fafafa;
   width: 178px;
+}
+
+.hero-socials-link:hover,
+.hero-socials-link.email:hover,
+.hero-socials-link:focus,
+.hero-socials-link.email:focus {
+  color: #4070eb;
+  box-shadow: 1px 1px 2px #4070eb;
 }
 
 @media only screen and (min-width: 359px) {

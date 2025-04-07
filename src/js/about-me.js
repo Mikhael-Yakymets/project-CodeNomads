@@ -1,3 +1,5 @@
+/*Accordion*/
+
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -8,3 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     openOnInit: [0],
   });
 });
+
+/*Swiper*/
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
