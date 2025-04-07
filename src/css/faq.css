@@ -19,7 +19,6 @@
 
 .ac .ac-trigger {
   font: bold 16px 'Arial', sans-serif;
-  color: var(--color-black);
   text-align: left;
   width: 100%;
   padding: 8px 32px 8px 8px;
@@ -52,7 +51,6 @@
 
 .ac .ac-panel .ac-text {
   font: 15px/24px 'Arial', sans-serif;
-  color: var(--color-black);
   padding: 8px;
   margin: 0;
 }
@@ -176,4 +174,3 @@
     padding-right: 171px;
   }
 }
-/* all ready */
