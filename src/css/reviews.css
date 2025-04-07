@@ -70,12 +70,13 @@
 
 .prev-icon,
 .next-icon {
-  fill: #fafafa;
+  fill: none;
+  stroke: #fafafa;
 }
 
 .button-prev:disabled .prev-icon,
 .button-next:disabled .next-icon {
-  fill: #3b3b3b;
+  stroke: #fafafa33;
 }
 
 .buttons {
