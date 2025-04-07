@@ -1,7 +1,10 @@
-document.querySelectorAll('.toggle-btn').forEach(button => {
-    button.addEventListener('click', () => {
-      const expanded = button.getAttribute('aria-expanded') === 'true' || false;
-      button.setAttribute('aria-expanded', !expanded);
-    });
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Accordion('#accordion-about', {
+    duration: 300,
+    showMultiple: false,
+    openOnInit: [0],
   });
-  
+});
