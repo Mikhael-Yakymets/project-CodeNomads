@@ -1,7 +1,7 @@
 .section-together {
     padding-top: 32px;
     padding-bottom: 32px;
-    background-image: url(../img/work-together-bg-img/bg-img-mob@1x.png);
+    background-image: url(../img/work-together-bg-img/bg-img-mob.png);
     background-repeat: no-repeat;
     background-position: right top 28px;
 }
@@ -64,15 +64,20 @@ form input {
     transition: all 0.2s ease-in-out; 
 }
 
-input::placeholder {
-    color: rgba(250, 250, 250, 0.6);
-    opacity: 0.5;
-}
-
 form input:focus,
 form input:hover {
-    box-shadow: 0 2px 0 #4070eb;
     border-bottom: 2px solid #4070eb;
+}
+
+input::placeholder {
+    color: rgba(250, 250, 250, 0.6);
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+input:hover::placeholder,
+input:focus::placeholder {
+    opacity: 0.8;
 }
 
 .work-together-error-input,
@@ -181,7 +186,7 @@ input.input-border-error:focus {
     .section-together {
         padding-top: 80px;
         padding-bottom: 160px;
-        background-image: url(../img/work-together-bg-img/bg-img-tab@1x.png);
+        background-image: url(../img/work-together-bg-img/bg-img-tab.png);
         background-position: right top;
     }
 
@@ -239,7 +244,7 @@ input.input-border-error:focus {
 @media screen and (min-width: 1440px) {
     .section-together {
         padding-left: 196px;
-        background-image: url(../img/work-together-bg-img/bg-img-dek@1x.png);
+        background-image: url(../img/work-together-bg-img/bg-img-dek.png);
     }
 
     .work-together-form {
