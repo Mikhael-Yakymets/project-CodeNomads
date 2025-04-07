@@ -1,14 +1,11 @@
-.covers{
-  background-color: #1C1D20;
+.covers {
+  background-color: #1c1d20;
   background-image: url('../img/covers/background.png');
   background-repeat: no-repeat;
   background-size: contain;
-  background-attachment: scroll; 
-  padding: 64px 0;
+  background-attachment: scroll;
+  padding: 65px 0;
 }
-
-
-
 
 .visually-hidden {
   position: absolute;
@@ -23,14 +20,13 @@
   padding: 40px 0;
   overflow: hidden;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
   width: 100%;
   height: 508px;
 }
-
 
 .cover-list {
   width: 100%;
@@ -44,7 +40,6 @@
   transform: translate(0, 0);
   transform: rotate(15deg);
 }
-
 
 .cover-item img {
   display: block;
@@ -79,11 +74,6 @@
   }
 }
 
-
-
-
-
-
 @keyframes move-right-down {
   0% {
     transform: translate(0, 0) rotate(15deg);
@@ -101,7 +91,6 @@
   }
 }
 
-
 .cover-list.animate.list-1 {
   animation: move-right-down 90s linear infinite;
 }
@@ -114,14 +103,3 @@
 .cover-list.animate.list-4 {
   animation: move-left-high 90s linear infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
