@@ -7,8 +7,9 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+// swiper class was changed to reviews-swiper class line twelve
 document.addEventListener('DOMContentLoaded', function () {
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper('.reviews-swiper', {
     modules: [Navigation, Pagination],
     watchOverflow: true,
     navigation: {
@@ -38,8 +39,10 @@ async function loadReviews(swiper) {
       'https://portfolio-js.b.goit.study/api/reviews'
     );
     const reviews = response.data;
-
-    const swiperWrapper = document.querySelector('.swiper-wrapper');
+    // class changed below as well line forty four
+    const swiperWrapper = document.querySelector(
+      '.reviews-swiper .swiper-wrapper'
+    );
 
     const reviewsAdd = reviews
       .map(
