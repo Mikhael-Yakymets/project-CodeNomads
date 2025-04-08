@@ -29,7 +29,7 @@
 }
 
 .cover-list {
-  width: 100%;
+  width: max-content;
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -46,7 +46,13 @@
   min-width: 282px;
   min-height: 162px; ;
   object-fit: cover;
+  border: none;
+  box-shadow: none;
 }
+.cover-item {
+  flex: 0 0 auto; 
+}
+
 @media (min-width: 768px) {
   .cover-wrapper {
     height: 960px;
@@ -82,7 +88,8 @@
     transform: translate(50vw, 15vw) rotate(17deg);
   }
 }
-@keyframes move-left-high {
+
+@keyframes move-left-up {
   0% {
     transform: translate(50vw, 15vw) rotate(17deg);
   }
@@ -92,14 +99,14 @@
 }
 
 .cover-list.animate.list-1 {
-  animation: move-right-down 90s linear infinite;
+  animation: move-right-down 40s linear infinite;
 }
 .cover-list.animate.list-2 {
-  animation: move-left-high 90s linear infinite;
+  animation: move-left-up 40s linear infinite;
 }
 .cover-list.animate.list-3 {
-  animation: move-right-down 90s linear infinite;
+  animation: move-right-down 40s linear infinite;
 }
 .cover-list.animate.list-4 {
-  animation: move-left-high 90s linear infinite;
+  animation: move-left-up 40s linear infinite;
 }
