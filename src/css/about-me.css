@@ -116,19 +116,7 @@
 .about-me {
   position: relative;
   background: var(--background);
-  padding: 64px 0 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .about-me {
-    padding: 64px 0 48px;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .about-me {
-    padding: 96px 0 82px;
-  }
+  padding: 96px 0 82px;
 }
 
 .accordion-container {
@@ -137,16 +125,10 @@
 
 #accordion-about .ac {
   background-color: var(--background);
-  margin: 20px 0;
+  margin: 32px 0;
   box-sizing: border-box;
   border: none;
   box-shadow: 0 1px 0 0 #fafafa33;
-}
-
-@media screen and (min-width: 768px) {
-  #accordion-about .ac {
-    margin: 32px 0;
-  }
 }
 
 #accordion-about .ac-header {
@@ -159,7 +141,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0;
-  font-family: Inter Tight;
+  font-family: 'Inter Tight';
   font-weight: 600;
   line-height: 24px;
   letter-spacing: -0.02em;
@@ -173,37 +155,23 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 12px;
-  padding-bottom: 20px;
+  padding: 0 68px 32px 696px;
   border: none;
   background: var(--background);
   overflow: hidden;
   transition: max-height 0.5s ease-out;
 }
 
-@media screen and (min-width: 768px) {
-  #accordion-about .ac .ac-panel {
-    padding-top: 0px;
-    padding-bottom: 32px;
-  }
+#accordion-about .ac:not(:first-child) .ac-panel {
+  padding-right: 215px;
 }
 
-@media screen and (min-width: 1440px) {
-  #accordion-about .ac .ac-panel {
-    padding: 0 68px 32px 696px;
-  }
+#accordion-about .ac.is-active .ac-panel .ac-text:first-child {
+  padding-top: 8px;
+}
 
-  #accordion-about .ac:not(:first-child) .ac-panel {
-    padding-right: 215px;
-  }
-
-  #accordion-about .ac.is-active .ac-panel .ac-text:first-child {
-    padding-top: 8px;
-  }
-
-  #accordion-about .ac:first-child .ac-panel .ac-text:first-child {
-    padding-bottom: 22px;
-  }
+#accordion-about .ac:first-child .ac-panel .ac-text:first-child {
+  padding-bottom: 22px;
 }
 
 #accordion-about .ac.acis-active .ac-panel {
@@ -217,7 +185,7 @@
 
 #accordion-about .ac.is-active .ac-text {
   padding: 0;
-  font-family: Inter Tight;
+  font-family: 'Inter Tight';
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -228,12 +196,6 @@
 #accordion-about .ac:first-child .ac-panel .ac-text:first-child {
   padding-bottom: 22px;
   padding-top: 8px;
-}
-
-@media screen and (min-width: 768px) {
-  #accordion-about .ac:first-child .ac-panel .ac-text:first-child {
-    padding-bottom: 6px;
-  }
 }
 
 #accordion-about .ac:first-child .ac-panel .ac-text:not(:first-child) {
@@ -248,21 +210,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #fafafa33;
   border-radius: 50%;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
-  #accordion-about .icon-span {
-    width: 40px;
-    height: 40px;
-  }
-}
-
 #accordion-about .icon-accordion {
+  width: 20px;
+  height: 20px;
   transition: transform 0.6s ease;
 }
 
