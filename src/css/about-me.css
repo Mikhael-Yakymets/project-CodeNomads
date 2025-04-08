@@ -247,9 +247,6 @@
 /* #region Swiper-section */
 
 /*Mobile*/
-
-/*Mobile*/
-
 .about-me-swiper {
   display: flex;
   align-items: center;
@@ -262,8 +259,6 @@
   display: flex;
   overflow: hidden;
   width: 260px;
-
-  margin-top: 32px;
 }
 
 /* Styles for slides */
@@ -306,36 +301,27 @@
   background-color: transparent;
   border-radius: 50%;
   cursor: pointer;
+  margin-left: auto;
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Styles for button-icon */
 .icon-skills-button {
-  fill: rgba(250, 250, 250, 0.6);
+  stroke: rgba(250, 250, 250, 0.6);
+  fill: none;
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Styles for hover, focus button */
-.swiper-skills-button-next:hover,
-.swiper-skills-button-next:focus {
-  color: #0041e8;
-  border-color: #0041e8;
-}
-
-/* Styles for hover, focus on icon*/
-.icon-skills-button:hover,
-.icon-skills-button:focus {
-  fill: #0041e8;
+.swiper-skills-button-next:hover .icon-skills-button,
+.swiper-skills-button-next:focus .icon-skills-button {
   stroke: #0041e8;
-  color: #0041e8;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
   .my-skill-swiper {
     width: 600px;
-
-    margin-top: 64px;
   }
 
   .swiper-slide.swiper-item {
@@ -357,8 +343,6 @@
 @media only screen and (min-width: 1440px) {
   .my-skill-swiper {
     width: 1200px;
-
-    margin-top: 96px;
   }
 }
 /* #endregion */
