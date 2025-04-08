@@ -3,7 +3,9 @@
 .swiper-wrapper-js {
   display: flex;
 }
-
+.projects-section {
+  padding-bottom: 64px;
+}
 .swiper-projects .projects-one-container {
   display: flex;
   flex-direction: column;
@@ -152,6 +154,9 @@
   margin-bottom: 32px;
 }
 @media only screen and (min-width: 768px) {
+  .projects-section {
+    padding-bottom: 96px;
+  }
   .projects-list-hashtags {
     flex-wrap: nowrap;
     flex-direction: row;
@@ -203,6 +208,9 @@
   }
 }
 @media only screen and (min-width: 1440px) {
+  .projects-section {
+    padding-bottom: 164px;
+  }
   .swiper-projects .projects-one-container {
     flex-direction: row;
   }
@@ -245,5 +253,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .btn-arrow .swiper-left-arrow use,
+  .btn-arrow .swiper-right-arrow use {
+    transform: scale(1.33);
+    transform-origin: center;
   }
 }
