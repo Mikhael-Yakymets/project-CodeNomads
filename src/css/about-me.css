@@ -308,7 +308,7 @@
 /* Styles for button-icon */
 .icon-skills-button {
   stroke: rgba(250, 250, 250, 0.6);
-  fill: none;
+  fill: #fafafa;
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -316,6 +316,7 @@
 .swiper-skills-button-next:hover .icon-skills-button,
 .swiper-skills-button-next:focus .icon-skills-button {
   stroke: #0041e8;
+  fill: #0041e8;
 }
 
 /* Tablet */
