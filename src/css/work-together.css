@@ -3,41 +3,32 @@
     padding-bottom: 32px;
     background-image: url(../img/work-together-bg-img/bg-img-mob.png);
     background-repeat: no-repeat;
-    background-position: right top 28px;
+    background-position: right center;
+    background-size: auto 100%;
 }
 
 .face-logo-img {
     border-radius: 12px;
 }
 
-.work-together-title-wrapper {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
 .work-title {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #fafafa;
+    margin-bottom: 60px;
 }
 
-.title-part {
+.work-together-title-part {
     color: #0041e8;
 }
 
-.title-next-line {
-    position: absolute;
-    left: -47px;
-    top: 56px;
-}
-
 .work-together-form {
-    margin-top: 96px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -187,24 +178,16 @@ input.input-border-error:focus {
         padding-top: 80px;
         padding-bottom: 160px;
         background-image: url(../img/work-together-bg-img/bg-img-tab.png);
-        background-position: right top;
     }
 
     .face-logo-img {
         border-radius: 24px;
     }
 
-    .work-together-wrapper {
-        gap: 20px;
-    }
-
     .work-title {
         font-size: 64px;
-    }
-
-    .title-next-line {
-            left: -78px;
-            top: 74px;
+        gap: 8px 20px;
+        margin-bottom: 18px;
     }
 
     .work-together-form {
@@ -228,7 +211,7 @@ input.input-border-error:focus {
     }
 
     .work-together-contact-list {
-        margin-top: 78px;
+        margin-top: 18px;
         gap: 8px;
     }
 
@@ -245,6 +228,10 @@ input.input-border-error:focus {
     .section-together {
         padding-left: 196px;
         background-image: url(../img/work-together-bg-img/bg-img-dek.png);
+    }
+
+    .work-title {
+        max-width: 442px;
     }
 
     .work-together-form {
