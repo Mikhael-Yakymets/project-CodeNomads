@@ -66,7 +66,7 @@ function handleMessageInput() {
   }
 }
 
-message.addEventListener('input', handleMessageInput);
+message.addEventListener('blur', handleMessageInput);
 
 
 
