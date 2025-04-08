@@ -70,13 +70,15 @@
 
 .prev-icon,
 .next-icon {
-  fill: none;
+  fill: #fafafa;
   stroke: #fafafa;
 }
 
 .button-prev:disabled .prev-icon,
 .button-next:disabled .next-icon {
-  stroke: #fafafa33;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .buttons {
