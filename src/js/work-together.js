@@ -56,20 +56,6 @@ input.addEventListener('input', checkEmail);
 
 
 
-function handleMessageInput() {
-  const MESSAGE_MAX_LENGTH = 40;
-
-  let fullText = message.value;
-
-  if (fullText.length > MESSAGE_MAX_LENGTH) {
-    message.value = fullText.slice(0, MESSAGE_MAX_LENGTH) + '...';
-  }
-}
-
-message.addEventListener('blur', handleMessageInput);
-
-
-
 function clearErrorOnInput(inputEl, errorEl) {
   inputEl.addEventListener('input', () => {
     if (inputEl.value.trim() !== '') {
