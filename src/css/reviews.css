@@ -66,6 +66,18 @@
 .button-next:disabled,
 .button-prev:disabled {
   border-color: #fafafa33;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.button-prev:hover,
+.button-next:hover,
+.button-next:focus,
+.button-prev:focus {
+    box-shadow: rgba(64, 112, 235, 0.25) 0px 50px 100px -20px,
+        rgba(64, 112, 235, 0.3) 0px 30px 60px -30px,
+        rgba(64, 112, 235, 0.35) 0px -2px 6px 0px inset;
+      transition: box-shadow 250ms ease;
 }
 
 .prev-icon,
