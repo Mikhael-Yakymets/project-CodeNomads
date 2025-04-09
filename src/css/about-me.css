@@ -201,8 +201,8 @@
 #accordion-about .ac .ac-panel {
   display: flex;
   flex-direction: column;
-  justify-content:flex-start;
-  text-align:start;
+  justify-content: flex-start;
+  text-align: start;
   gap: 16px;
   border: none;
   background: var(--background);
@@ -338,7 +338,6 @@
 .my-skill-swiper {
   display: flex;
   overflow: hidden;
-  /* width: 260px; */
   width: 100%;
   padding: 0;
   margin: 0;
@@ -351,7 +350,6 @@
   justify-content: center;
   text-align: center;
   width: 130px;
-  /* height: 130px; */
 
   flex-shrink: 0;
   border-radius: 50%;
@@ -370,9 +368,9 @@
 
 /* Styles for active slides */
 .swiper-slide-active.swiper-item {
-  background-color: #242527;
-  color: #0041e8;
-  border-color: #0041e8;
+  background-color: #0041e8;
+  color: #fafafa;
+  border: none;
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -385,6 +383,8 @@
   border-radius: 50%;
   cursor: pointer;
   margin-left: auto;
+  padding: 18px;
+  border: none;
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -395,27 +395,26 @@
 }
 
 .swiper-skills-button-next:hover {
-  color: #0041e8;
-  box-shadow: 1px 1px #0041e8;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1.5);
+}
+
+.swiper-skills-button-next:focus {
+  outline: none;
 }
 
 /* Styles for hover, focus button */
 .swiper-skills-button-next:hover .icon-skills-button,
 .swiper-skills-button-next:focus .icon-skills-button {
-  stroke: #0041e8;
-  fill: #0041e8;
+  fill: #fafafa;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
-  .about-me-swiper{
+  .about-me-swiper {
     gap: 64px;
   }
 
   .my-skill-swiper {
-    /* width: 600px; */
     padding: 0;
     margin: 0;
     width: 100%;
@@ -423,7 +422,6 @@
 
   .swiper-slide.swiper-item {
     width: 200px;
-    /* height: 200px; */
     font-weight: 500;
     font-size: 20px;
     letter-spacing: -0.02em;
@@ -438,7 +436,7 @@
 /* Desktop */
 
 @media only screen and (min-width: 1440px) {
-.about-me-swiper {
+  .about-me-swiper {
     gap: 72px;
   }
 
