@@ -48,3 +48,35 @@ orderProjectBtn.addEventListener('click', () => {
   closeModalWindow();
 });
 //#endregion Modal window
+
+//#region Scroll control
+function smoothScroll(target, duration) {
+  const start = window.pageYOffset;
+  const targetPosition = document.querySelector(target).offsetTop;
+  const distance = targetPosition - start;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (!startTime) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const progress = Math.min(timeElapsed / duration, 1);
+
+    window.scrollTo(0, start + distance * easeInOutQuad(progress));
+
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function easeInOutQuad(t) {
+    return t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+  }
+
+  requestAnimationFrame(animation);
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    smoothScroll(this.getAttribute('href'), 1700);
+  });
+});
+//#endregion Scroll control
