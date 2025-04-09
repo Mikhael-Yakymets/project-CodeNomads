@@ -43,8 +43,50 @@
   color: #4070eb;
 }
 
+.blue-color-span {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
 .grey-color-span {
   color: rgba(250, 250, 250, 0.4);
+}
+
+.grey-color-span {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }
 
 .photo-wrapper {
@@ -113,10 +155,15 @@
 /* #endregion */
 
 /* #region Accordion-section*/
+
+/*Mobile*/
 .about-me {
   position: relative;
   background: var(--background);
-  padding: 96px 0 82px;
+}
+
+.about-me-accordion {
+  margin-bottom: 32px;
 }
 
 .accordion-container {
@@ -125,7 +172,7 @@
 
 #accordion-about .ac {
   background-color: var(--background);
-  margin: 32px 0;
+  margin: 0;
   box-sizing: border-box;
   border: none;
   box-shadow: 0 1px 0 0 #fafafa33;
@@ -154,29 +201,34 @@
 #accordion-about .ac .ac-panel {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 0 68px 32px 696px;
+  justify-content:flex-start;
+  text-align:start;
+  gap: 16px;
   border: none;
   background: var(--background);
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
+  transition: max-height 5s ease-out;
 }
 
 #accordion-about .ac:not(:first-child) .ac-panel {
   padding-right: 215px;
 }
 
-#accordion-about .ac.is-active .ac-panel .ac-text:first-child {
+/* #accordion-about .ac.is-active .ac-panel .ac-text:first-child {
   padding-top: 8px;
-}
+} */
 
-#accordion-about .ac:first-child .ac-panel .ac-text:first-child {
+/* #accordion-about .ac:first-child .ac-panel .ac-text:first-child {
   padding-bottom: 22px;
-}
+} */
 
 #accordion-about .ac.acis-active .ac-panel {
   padding: 0;
   border: none;
+}
+
+#accordion-about .ac {
+  padding: 32px 0;
 }
 
 #accordion-about .ac .ac-text {
@@ -188,7 +240,7 @@
   font-family: 'Inter Tight';
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 150%;
   letter-spacing: -0.02em;
   color: #fafafa;
 }
@@ -242,23 +294,54 @@
 #accordion-about .ac-trigger:active .icon-accordion {
   --color1: var(--green);
 }
+
+/*Tablet*/
+@media only screen and (min-width: 768px) {
+  .about-me-accordion {
+    margin-bottom: 64px;
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 1440px) {
+  .about-me-accordion {
+    margin-bottom: 96px;
+  }
+
+  #accordion-about .ac:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  #accordion-about .ac .ac-panel {
+    padding: 0 68px 32px 696px;
+  }
+}
+
 /* #endregion */
 
 /* #region Swiper-section */
 
 /*Mobile*/
+
 .about-me-swiper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 55px;
   overflow: hidden;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .my-skill-swiper {
   display: flex;
   overflow: hidden;
-  width: 260px;
+  /* width: 260px; */
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /* Styles for slides */
@@ -307,8 +390,14 @@
 
 /* Styles for button-icon */
 .icon-skills-button {
-  stroke: rgba(250, 250, 250, 0.6);
-  fill: #fafafa;
+  fill: #3b3b3b;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.swiper-skills-button-next:hover {
+  color: #0041e8;
+  box-shadow: 1px 1px #0041e8;
+  border: 1px solid rgba(250, 250, 250, 0.2);
   transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -321,8 +410,15 @@
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
+  .about-me-swiper{
+    gap: 64px;
+  }
+
   .my-skill-swiper {
-    width: 600px;
+    /* width: 600px; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
   .swiper-slide.swiper-item {
@@ -342,6 +438,10 @@
 /* Desktop */
 
 @media only screen and (min-width: 1440px) {
+.about-me-swiper {
+    gap: 72px;
+  }
+
   .my-skill-swiper {
     width: 1200px;
   }
