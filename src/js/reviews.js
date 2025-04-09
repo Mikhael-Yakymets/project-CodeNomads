@@ -17,15 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
       prevEl: '.button-prev',
     },
     slidesPerView: 1,
+    spaceBetween: 16,
     breakpoints: {
       768: {
         slidesPerView: 2,
         slidesPerGroup: 2,
-        spaceBetween: 16,
       },
       1440: {
         slidesPerView: 4,
-        spaceBetween: 16,
       },
     },
   });
