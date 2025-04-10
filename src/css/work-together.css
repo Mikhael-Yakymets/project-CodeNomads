@@ -1,40 +1,34 @@
 .section-together {
     padding-top: 32px;
     padding-bottom: 32px;
+    background-image: url(../img/work-together-bg-img/bg-img-mob.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
 }
 
 .face-logo-img {
     border-radius: 12px;
 }
 
-.work-together-title-wrapper {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
 .work-title {
-    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 8px;
     font-weight: 500;
     font-size: 40px;
     line-height: 1;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     color: #fafafa;
+    margin-bottom: 60px;
 }
 
-.title-part {
+.work-together-title-part {
     color: #0041e8;
 }
 
-.title-next-line {
-    position: absolute;
-    left: -47px;
-    top: 56px;
-}
-
 .work-together-form {
-    margin-top: 96px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -47,9 +41,11 @@
 }
 
 form input {
+    width: 100%;
     outline: none;
     padding-bottom: 20px;
     background-color: transparent;
+    text-overflow: ellipsis;
     border: none;
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
     font-weight: 500;
@@ -60,27 +56,63 @@ form input {
     transition: all 0.2s ease-in-out; 
 }
 
-input::placeholder {
-    color: rgba(250, 250, 250, 0.6);
-    opacity: 0.5;
+form input:focus,
+form input:hover {
+    border-bottom: 2px solid #4070eb;
 }
 
-form input:hover,
-form input:focus {
-    box-shadow: 0 2px 0 #4070eb;
-    border-bottom: 2px solid #4070eb;
+input::placeholder {
+    color: rgba(250, 250, 250, 0.6);
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+input:hover::placeholder,
+input:focus::placeholder {
+    opacity: 0.8;
 }
 
 .work-together-error-input,
 .work-together-error-message {
     display: none;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: rgba(231, 74, 59, 1);
-    margin-top: -20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #e74a3b;
+    margin-top: -22px;
     padding-left: 2px;
+}
+
+.work-together-success-input{
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: 0.02em;
+    color: #3cbc81;
+    margin-top: -22px;
+    padding-left: 2px;
+}
+
+.input-border-success{
+    border-bottom: 1px solid #3cbc81;
+    box-shadow: none;
+}
+
+.input-border-error {
+    border-bottom: 1px solid #e74a3b;
+    box-shadow: none;
+}
+
+input.input-border-success:focus {
+    border-bottom: 1px solid #3cbc81;
+    box-shadow: none;
+}
+
+input.input-border-error:focus {
+    border-bottom: 2px solid #e74c3c;
+    box-shadow: none;
 }
 
 .work-together-button {
@@ -105,25 +137,30 @@ form input:focus {
 .work-together-contact-list {
     margin-top: 64px;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 }
 
-.work-together-link {
+.work-together-email-link,
+.work-together-phone-link {
+    display: inline-block;
+    font-style: normal;
+    outline: none;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: #fafafa;
     cursor: pointer;
-    outline: none;
-    font-style: normal;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 10px 12px;
     transition: all 0.2s ease-in-out;
 }
 
-.work-together-link:focus,
-.work-together-link:hover {
+.work-together-email-link:focus,
+.work-together-email-link:hover,
+.work-together-phone-link:focus,
+.work-together-phone-link:hover {
     color: #4070eb;
     box-shadow: 1px 1px 2px #4070eb;
 }
@@ -141,23 +178,17 @@ form input:focus {
     .section-together {
         padding-top: 80px;
         padding-bottom: 160px;
+        background-image: url(../img/work-together-bg-img/bg-img-tab.png);
     }
 
     .face-logo-img {
         border-radius: 24px;
     }
 
-    .work-together-wrapper {
-        gap: 20px;
-    }
-
     .work-title {
         font-size: 64px;
-    }
-
-    .title-next-line {
-            left: -78px;
-            top: 74px;
+        gap: 8px 20px;
+        margin-bottom: 18px;
     }
 
     .work-together-form {
@@ -181,11 +212,12 @@ form input:focus {
     }
 
     .work-together-contact-list {
-        margin-top: 78px;
+        margin-top: 18px;
         gap: 8px;
     }
 
-    .work-together-link {
+    .work-together-email-link,
+    .work-together-phone-link {
         padding: 18px 32px;
         font-size: 16px;
     }
@@ -195,7 +227,12 @@ form input:focus {
 
 @media screen and (min-width: 1440px) {
     .section-together {
-    padding-left: 196px;
+        padding-left: 196px;
+        background-image: url(../img/work-together-bg-img/bg-img-dek.png);
+    }
+
+    .work-title {
+        max-width: 442px;
     }
 
     .work-together-form {

@@ -1,7 +1,31 @@
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../../assets/fonts/InterTight-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter Tight';
+  src: url('../../assets/fonts/InterTight-VariableFont_wght.ttf')
+    format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   font-family: 'Inter Tight', sans-serif;
+  box-sizing: border-box;
   background-color: #1c1d20;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
 }
+
 .container {
   min-width: 320px;
   max-width: 375px;

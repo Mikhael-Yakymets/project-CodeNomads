@@ -1,14 +1,11 @@
-.covers{
-  background-color: #1C1D20;
-  background-image: url('/src/img/Covers/background.png');
-  background-size: cover;       
-  background-position: center;  
-  background-repeat: no-repeat; 
-  background-attachment: fixed; 
+.covers {
+  background-color: #1c1d20;
+  background-image: url('../img/covers/background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: scroll;
+  padding: 64px 0;
 }
-
-
-
 
 .visually-hidden {
   position: absolute;
@@ -23,7 +20,7 @@
   padding: 40px 0;
   overflow: hidden;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 24px;
@@ -31,9 +28,8 @@
   height: 508px;
 }
 
-
 .cover-list {
-  width: 100%;
+  width: max-content;
   display: flex;
   flex-direction: row;
   gap: 16px;
@@ -42,16 +38,21 @@
   padding: 0;
   will-change: transform;
   transform: translate(0, 0);
-  transform: rotate(15deg);
+  transform: rotate(17deg);
 }
-
 
 .cover-item img {
   display: block;
-  width: 282px;
-  height: 162px;
+  min-width: 282px;
+  min-height: 162px; ;
   object-fit: cover;
+  border: none;
+  box-shadow: none;
 }
+.cover-item {
+  flex: 0 0 auto; 
+}
+
 @media (min-width: 768px) {
   .cover-wrapper {
     height: 960px;
@@ -79,49 +80,33 @@
   }
 }
 
-
-
-
-
-
 @keyframes move-right-down {
   0% {
-    transform: translate(0, 0) rotate(15deg);
+    transform: translate(0, 0) rotate(17deg);
   }
   100% {
-    transform: translate(50vw, 15vw) rotate(15deg);
-  }
-}
-@keyframes move-left-high {
-  0% {
-    transform: translate(50vw, 15vw) rotate(15deg);
-  }
-  100% {
-    transform: translate(0, 0) rotate(15deg);
+    transform: translate(50vw, 15vw) rotate(17deg);
   }
 }
 
+@keyframes move-left-up {
+  0% {
+    transform: translate(50vw, 15vw) rotate(17deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(17deg);
+  }
+}
 
 .cover-list.animate.list-1 {
-  animation: move-right-down 90s linear infinite;
+  animation: move-right-down 40s linear infinite;
 }
 .cover-list.animate.list-2 {
-  animation: move-left-high 90s linear infinite;
+  animation: move-left-up 40s linear infinite;
 }
 .cover-list.animate.list-3 {
-  animation: move-right-down 90s linear infinite;
+  animation: move-right-down 40s linear infinite;
 }
 .cover-list.animate.list-4 {
-  animation: move-left-high 90s linear infinite;
+  animation: move-left-up 40s linear infinite;
 }
-
-
-
-
-
-
-
-
-
-
-

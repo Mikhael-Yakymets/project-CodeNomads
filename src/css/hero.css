@@ -128,6 +128,14 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('../img/herophoto/glasseffect_tab@2x.png');
+  }
+}
+
 /* #endregion */
 
 /* #region Desctop Hero */
@@ -138,7 +146,6 @@
     padding-top: 300px;
     padding-bottom: 32px;
   }
-
   .hero-content-container {
     gap: 242px;
   }
@@ -157,4 +164,11 @@
   }
 }
 
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('../img/herophoto/hero_desc@2x.png');
+  }
+}
 /* #endregion */

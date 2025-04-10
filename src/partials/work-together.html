@@ -1,34 +1,35 @@
 <section class="section-together" id="work-together">
-  <div class="container work-together-container">
-    <div class="work-together-title-wrapper">
+  <div class="container">
+    <h3 class="work-title">
       <picture>
         <source
           media="(min-width: 768px)"
           srcset="
-            ./img/work-together/face-tab-dek@1x.jpg 1x,
-            ./img/work-together/face-tab-dek@2x.jpg 2x
+            ./img/work-together/face-tab@1x.png 1x,
+            ./img/work-together/face-tab@2x.png 2x
           "
         />
         <source
           media="(max-width: 767px)"
           srcset="
-            ./img/work-together/face-mob@1x.jpg 1x,
-            ./img/work-together/face-mob@2x.jpg 2x
+            ./img/work-together/face-mob@1x.png 1x,
+            ./img/work-together/face-mob@2x.png 2x
           "
         />
         <img
           class="face-logo-img"
-          src="./img/work-together/face-mob@1x.jpg"
+          src="./img/work-together/face-mob@1x.png"
           alt="lloyd-developer"
           width="70"
           height="70"
         />
       </picture>
-      <h3 class="work-title">
-        let's <span class="title-part">work</span>
-        <span class="title-next-line">together</span>
-      </h3>
-    </div>
+      <div class="work-together-title-box">
+        let's
+        <span class="work-together-title-part">work</span>
+      </div>
+      <span class="title-next-line">together</span>
+    </h3>
 
     <form class="work-together-form">
       <div class="work-together-form-box">
@@ -46,6 +47,7 @@
             pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
           />
           <p class="work-together-error-input">Invalid email, try again</p>
+          <p class="work-together-success-input">Success!</p>
         </div>
 
         <div class="work-together-form-wrapper">
@@ -70,12 +72,12 @@
       <li class="work-together-item">
         <a
           href="mailto:lloydjefferson@gmail.com"
-          class="work-together-link email-link"
+          class="work-together-email-link"
           >lloydjefferson@gmail.com</a
         >
       </li>
       <li class="work-together-item">
-        <a href="tel:+3801111111111" class="work-together-link phone-link"
+        <a href="tel:+3801111111111" class="work-together-phone-link"
           >+380 11 1111 11 11</a
         >
       </li>

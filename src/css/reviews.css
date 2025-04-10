@@ -1,4 +1,4 @@
-.swiper-slide {
+.reviews .swiper-slide {
   min-height: 302px;
   width: 343px;
   border-radius: 20px;
@@ -61,21 +61,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: box-shadow 0.3s ease;
 }
 
 .button-next:disabled,
 .button-prev:disabled {
   border-color: #fafafa33;
+  cursor: not-allowed;
+  pointer-events: none;
 }
+
+/* .button-prev:hover,
+.button-next:hover,
+.button-next:focus,
+.button-prev:focus {
+  box-shadow: rgba(64, 112, 235, 0.25) 0px 50px 100px -20px,
+    rgba(64, 112, 235, 0.3) 0px 30px 60px -30px,
+    rgba(64, 112, 235, 0.35) 0px -2px 6px 0px inset;
+  transition: box-shadow 250ms ease;
+} */
 
 .prev-icon,
 .next-icon {
   fill: #fafafa;
+  stroke: #fafafa;
+  transition: transform 0.3s ease;
+}
+
+.prev-icon:hover,
+.prev-icon:focus {
+  transform: scale(1.2);
+}
+
+.next-icon:hover,
+.next-icon:focus {
+  transform: scale(1.2);
 }
 
 .button-prev:disabled .prev-icon,
 .button-next:disabled .next-icon {
-  fill: #3b3b3b;
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 .buttons {
@@ -92,7 +119,7 @@
   color: red;
 }
 
-.swiper {
+.reviews .swiper {
   margin-bottom: 32px;
 }
 

@@ -1,3 +1,8 @@
+/*Mobile*/
+
+.benefits-section {
+  padding: 64px 0;
+}
 
 .benefits-title {
   font-weight: 600;
@@ -13,30 +18,28 @@
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center;
-  align-items: flex-start; */
+  justify-content: center;
+  align-items: center;
   gap: 16px;
 
   margin-bottom: 32px;
-}
-
-@media screen and (min-width: 768px) {
-  .benefits-list {
-    margin-bottom: 64px;
-  }
 }
 
 .benefits-item {
   background-color: #242527;
   border-radius: 20px;
   padding: 24px;
-  height: auto;
+
+  width: 100%;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
-  .benefits-item {
-    max-width: calc((100% - 16px) / 2);
-  }
+.benefits-item:hover,
+.benefits-item:focus-visible {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 1px 1px 2px #4070eb;
 }
 
 .benefits-icon-wrapper {
@@ -86,40 +89,67 @@
   letter-spacing: -0.02em;
   color: #fafafa;
 
-  margin-bottom: 64px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  white-space: nowrap;
+
+  cursor: pointer;
+  outline: none;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (min-width: 768px) {
-    .redirect-button {
-        margin-bottom: 96px;
-    }
+.redirect-button:hover,
+.redirect-button:focus-visible {
+  color: #4070eb;
+  box-shadow: 1px 1px 2px #4070eb;
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media screen and (min-width: 1440px) {
-  .benefits-container {
-    display: flex;
-    gap: 16px;
+.redirect-button:focus {
+  outline: none;
+}
+
+.redirect-button:active {
+  color: #4070eb;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+#benefits {
+  scroll-behavior: smooth;
+}
+
+/*Tablet*/
+
+@media only screen and (min-width: 768px) {
+  .benefits-section {
+    padding: 96px 0;
   }
 
-  .container > div {
-    flex: 1;
+  .benefits-list {
+    margin-bottom: 64px;
   }
 
   .benefits-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: calc((100% - 16px) / 2);
+  }
+}
+
+/*Desktop*/
+
+@media only screen and (min-width: 1440px) {
+  .benefits-section {
+    padding: 164px 0;
   }
 
-  .benefits-item:hover {
-    cursor: pointer;
-    transform: scale(1.05);
+  .benefits-container {
+    display: flex;
   }
 
-  .redirect-button:hover {
-    background-color: #242527;
-    transition: background-color 0.3s ease;
-  }
-
-  .redirect-button {
-      margin-bottom: 164px;
+  .benefits-container > div {
+    flex: 1;
   }
 }
