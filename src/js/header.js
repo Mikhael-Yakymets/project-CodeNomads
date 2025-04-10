@@ -18,13 +18,30 @@ buttonOpenModalWindow.addEventListener('click', onShowModalWindow);
 //#region Nav Menu
 function openNavList() {
   menuNav.classList.toggle('visualy-hidden');
+
+  if (!menuNav.classList.contains('visualy-hidden')) {
+    document.addEventListener('click', closeNavOnClickOutside);
+  } else {
+    document.removeEventListener('click', closeNavOnClickOutside);
+  }
 }
 
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
     menuNav.classList.add('visualy-hidden');
+    document.removeEventListener('click', closeNavOnClickOutside);
   });
 });
+
+function closeNavOnClickOutside(event) {
+  if (
+    !menuNav.contains(event.target) &&
+    !buttonMenuNav.contains(event.target)
+  ) {
+    menuNav.classList.add('visualy-hidden');
+    document.removeEventListener('click', closeNavOnClickOutside);
+  }
+}
 //#endregion Nav Menu
 
 //#region Modal window
