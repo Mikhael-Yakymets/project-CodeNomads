@@ -208,6 +208,7 @@
   background: var(--background);
   overflow: hidden;
   transition: max-height 5s ease-out;
+  padding-right: 0;
 }
 
 #accordion-about .ac:not(:first-child) .ac-panel {
@@ -293,6 +294,17 @@
 
 #accordion-about .ac-trigger:active .icon-accordion {
   --color1: var(--green);
+}
+
+#accordion-about .ac-panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+#accordion-about .ac.is-active .ac-panel {
+  max-height: 2000px;
+  padding-top: 16px;
 }
 
 /*Tablet*/

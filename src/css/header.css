@@ -80,8 +80,10 @@
   pointer-events: none;
 }
 
-@media only screen and (max-width: 374.98px) and (min-resolution: 192dpi) {
-  .mobile-menu {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-section {
     background-image: url('../img/herophoto/glasseffect_mob@2x.png');
   }
 }

@@ -1,21 +1,21 @@
 /*Accordion*/
 
 import Accordion from 'accordion-js';
-// import 'accordion-js/dist/accordion.min.css';
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 document.addEventListener('DOMContentLoaded', () => {
-  new Accordion('#accordion-about', {
-    duration: 300,
-    showMultiple: false,
-    openOnInit: [0],
-  });
+  const aboutAccordion = document.querySelector('#accordion-about');
+  if (aboutAccordion) {
+    new Accordion(aboutAccordion, {
+      duration: 400,
+      showMultiple: false,
+      openOnInit: [0],
+    });
+  }
 });
-
-/*Swiper*/
 
 document.addEventListener('DOMContentLoaded', () => {
   const mySkillSwiper = new Swiper('.my-skill-swiper', {
