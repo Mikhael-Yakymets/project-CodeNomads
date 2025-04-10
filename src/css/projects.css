@@ -44,6 +44,7 @@
 
 .slider-icon-container .next-button-js-prj:disabled,
 .slider-icon-container .prev-button-js-prj:disabled {
+  border-color: #fafafa33;
   opacity: 0.5;
   cursor: not-allowed;
   pointer-events: none;
@@ -120,6 +121,7 @@
   line-height: 1.17;
   letter-spacing: -0.03em;
   margin-bottom: 32px;
+  color: #1c1d20;
 }
 
 .projects-btn {
@@ -148,7 +150,7 @@
 }
 
 .btn-arrow {
-  border: 1px solid #fafafa33;
+  border: 1px solid #fafafa80;
   border-radius: 60px;
   padding: 14px;
   width: 52px;
@@ -196,7 +198,7 @@
   }
 
   .btn-arrow {
-    border: 1px solid #fafafa33;
+    border: 1px solid #fafafa80;
     border-radius: 60px;
     padding: 18px;
     width: 68px;
@@ -253,7 +255,7 @@
   }
 
   .btn-arrow {
-    border: 1px solid #fafafa33;
+    border: 1px solid #fafafa80;
     border-radius: 60px;
     padding: 18px;
     width: 68px;
