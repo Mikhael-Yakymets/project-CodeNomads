@@ -1,7 +1,7 @@
 /* #region Mobile Hero */
 
 .hero-section {
-  background-image: url('../img/herophoto/Glasseffect_mob@1x.png');
+  background-image: url('../img/herophoto/glasseffect_mob@1x.png');
   padding-top: 282px;
   padding-bottom: 32px;
   background-position: center;
@@ -12,7 +12,7 @@
 
 @media (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url('../img/herophoto/Glasseffect_mob@2x.png');
+    background-image: url('../img/herophoto/glasseffect_mob@2x.png');
   }
 }
 
@@ -89,7 +89,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-section {
-    background-image: url('../img/herophoto/Glasseffect_tab@1x.png');
+    background-image: url('../img/herophoto/glasseffect_tab@1x.png');
     padding-top: 300px;
     padding-bottom: 32px;
   }
@@ -121,7 +121,7 @@
 @media only screen and (min-width: 768px) and (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url('../img/herophoto/Glasseffect_tab@2x.png');
+    background-image: url('../img/herophoto/glasseffect_tab@2x.png');
   }
 }
 
@@ -131,7 +131,7 @@
 
 @media only screen and (min-width: 1440px) {
   .hero-section {
-    background-image: url('../img/herophoto/Hero_desc@1x.png');
+    background-image: url('../img/herophoto/hero_desc@1x.png');
     padding-top: 300px;
     padding-bottom: 32px;
   }
@@ -148,7 +148,7 @@
 @media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-section {
-    background-image: url('../img/herophoto/Hero_desc@2x.png');
+    background-image: url('../img/herophoto/hero_desc@2x.png');
   }
 }
 /* #endregion */
