@@ -118,6 +118,14 @@
   .hero-socials-link.email {
     width: 224px;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('../img/herophoto/glasseffect_tab@2x.png');
+    }
+  }
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -145,6 +153,14 @@
   .hero-title {
     max-width: 1084px;
     margin: 0 auto;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-section {
+      background-image: url('../img/herophoto/hero_desc@2x.png');
+    }
   }
 }
 
